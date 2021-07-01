@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".activity.QuestionActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="Ssam One"
+        android:textSize="60dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/arial"/>
+
+    <TextView
+        android:id="@+id/qNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="#N번째 질문"
+        android:textSize="15dp"
+        android:fontFamily="@font/din_alter"/>
+    <TextView
+        android:id="@+id/qContent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="당신을 위한 질문"
+        android:textSize="20dp"
+        android:fontFamily="@font/din_alter"/>
+    <LinearLayout
+        android:id="@+id/answerWrap"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/answer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="당신의 답변은?"
+            android:padding="10dp"
+            android:fontFamily="@font/din_alter"/>
+        <ImageButton
+            android:id="@+id/answerSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_check_24"
+            android:backgroundTint="#00000000"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvAnswer"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="대충 답변"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:fontFamily="@font/din_alter"/>
+
+    <LinearLayout
+        android:id="@+id/diaryWrap"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="300dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/diary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="한 줄 일기"
+            android:padding="10dp"
+            android:fontFamily="@font/din_alter"/>
+        <ImageButton
+            android:id="@+id/diarySubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_check_24"
+            android:backgroundTint="#00000000"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvDiary"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="대충 답변"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:fontFamily="@font/din_alter"/>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="10dp"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tvNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#1"
+        android:textSize="30dp"
+        android:textColor="#029A0E"
+        android:fontFamily="@font/chalkduster"/>
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="10dp"
+        android:text="당신의 감정을 이모티콘으로 나타내자면 어떤 모습인가요?"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/din_alter"/>
+</LinearLayout>
